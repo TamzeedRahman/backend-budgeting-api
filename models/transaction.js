@@ -1,9 +1,8 @@
 module.exports = [
   {
-    id: 0,
-    name: "bob",
-    date: "1/1/11",
-    amount: 1000,
-    from: "idiot",
+    date: "2021-08-20",
+    name: "Food",
+    amount: -110,
+    from: "Grocery store",
   },
 ];
