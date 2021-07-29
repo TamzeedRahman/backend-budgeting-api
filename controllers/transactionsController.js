@@ -36,7 +36,7 @@ transactions.delete("/:index", (req, res) => {
   if (transactionsArray[index]) {
     res.json(removedTransaction);
   } else {
-    res.redirect("404");
+    res.redirect("404"); // THE SPLICE IS CAUSTING A ERROR WHEN IT COMES TO THE LAST INDEX
   }
 });
 
