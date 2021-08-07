@@ -29,7 +29,7 @@ transactions.put("/:index", (req, res) => {
     res.redirect("404");
   }
 });
-
+// THIS WAS SO CONFUSINGGGGING LIKE WAHHHHHT
 
 transactions.delete("/:index", (req, res) => {
   const { index } = req.params;
