@@ -30,15 +30,6 @@ transactions.put("/:index", (req, res) => {
   }
 });
 
-//write a route for deleting a transaction                                                                                                                                               
-transactions.delete("/:index", (req, res) => {
-  const { index } = req.params;
-  if (transactionsArray[index]) {
-    transactionsArray.splice(index, 1);
-    res.json(transactionsArray);
-
-transactions.delete("/:index", (req, res) => {
-
 
 transactions.delete("/:index", (req, res) => {
   const { index } = req.params;
