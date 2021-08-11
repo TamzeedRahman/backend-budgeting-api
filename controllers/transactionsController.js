@@ -35,7 +35,7 @@ transactions.delete("/:index", (req, res) => {
   const { index } = req.params;
   if (transactionsArray[index]) {
     transactionsArray.splice(index, 1);
-    res.json(transactionsArray);
+    res.json(transactionsArray[0]);
   } else {
     res.redirect("404"); // THE SPLICE IS CAUSTING A ERROR WHEN IT COMES TO THE LAST INDEX
   }
